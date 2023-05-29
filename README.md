@@ -1,6 +1,6 @@
 # BrainSprint
 
-## In Betrieb nahme
+## Inbetriebnahme
 
 ### Schritt 1
 Laden Sie den Code des Programmes herunter. Sie können den Code im Ordner BrainSprintCode finden.

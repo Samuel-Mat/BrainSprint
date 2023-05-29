@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Light.ttf");
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#login-content {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  margin-top: 20%;
+  border: black solid 1px;
+}
+
+#login-title {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#login-email-div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.login-field {
+  align-items: center;
+}
+
+.login-label {
+  align-items: center;
+  width: 80px;
+}
+
+#login-password-div {
+  display: flex;
+  width: 100%;
+}
+
+#login-submit {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  width: 80px;
+  height: 28px;
+}
+
+#login-submit:hover {
+  cursor: pointer;
+}

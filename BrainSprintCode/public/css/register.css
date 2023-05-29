@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Light.ttf");
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#register-content {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  margin-top: 20%;
+  border: black solid 1px;
+}
+
+#register-title {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.register-input {
+  display: flex;
+  margin-top: 4%;
+  width: 100%;
+}
+.register-field {
+  align-items: center;
+}
+
+.register-label {
+  align-items: center;
+  width: 80px;
+}
+
+#register-submit {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  width: 80px;
+  height: 28px;
+}
+
+#register-submit:hover {
+  cursor: pointer;
+}

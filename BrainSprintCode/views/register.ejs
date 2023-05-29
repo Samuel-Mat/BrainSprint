@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainSprint</title>
+    <!--Help for the favicon not showing up https://stackoverflow.com/questions/16375592/favicon-not-showing-up-in-google-chrome -->
+    <link rel="icon" type="image/png" href="./image/favicon.png?v2" />
+    <link
+      href="/css/register.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div id="register-content">
+      <h1 id="register-title">Register</h1>
+      <form action="/register" method="POST">
+        <div class="register-input">
+          <label class="register-label" for="name">Name</label>
+          <input
+            class="register-field"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="register-input">
+          <label class="register-label" for="email">Email</label>
+          <input
+            class="register-field"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="register-input">
+          <label class="register-label" for="password">Password</label>
+          <input
+            class="register-field"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <button id="register-submit" type="submit">Register</button>
+      </form>
+      <a href="/login">Login</a>
+    </div>
+  </body>
+</html>

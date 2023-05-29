@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Quiz website to check your knowledge about everything. You can also create your own quizzes and share the with friends or the whole world!"
+    />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <title>BrainSprint</title>
+    <!--Help for the favicon not showing up https://stackoverflow.com/questions/16375592/favicon-not-showing-up-in-google-chrome -->
+    <link rel="icon" type="image/png" href="./image/favicon.png?v2" />
+  </head>
+
+  <body>
+    <nav id="index-navbar">
+      <a class="nav-btn" href="/quizcreator">Create Quiz</a>
+      <a class="nav-btn" onclick="AddQuiz()">Add Quiz</a>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button id="logout-btn" type="submit">Log Out</button>
+      </form>
+    </nav>
+
+    <div id="index-private">
+      <h2 class="title">My Quizzes</h2>
+      <ul id="private-list"></ul>
+    </div>
+
+    <div id="index-public">
+      <h2 class="title">Public Quizzes</h2>
+      <ul id="public-list"></ul>
+    </div>
+    <footer id="footer"></footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainSprint</title>
+    <!--Help for the favicon not showing up https://stackoverflow.com/questions/16375592/favicon-not-showing-up-in-google-chrome -->
+    <link rel="icon" type="image/png" href="./image/favicon.png?v2" />
+    <link
+      href="/css/loginstyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div id="login-content">
+      <h1 id="login-title">Login</h1>
+      <% if(messages.error) {%> <%= messages.error %> <% } %>
+      <form id="login-form" action="/login" method="POST">
+        <div id="login-email-div">
+          <label class="login-label" for="email">Email </label>
+          <input
+            class="login-field"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div id="login-password-div">
+          <label class="login-label" for="password">Password</label>
+          <input
+            class="login-field"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <button id="login-submit" type="submit">Login</button>
+      </form>
+      <a href="/register">Register</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/quizcreator.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>BrainSprint</title>
+    <!--Help for the favicon not showing up https://stackoverflow.com/questions/16375592/favicon-not-showing-up-in-google-chrome -->
+    <link rel="icon" type="image/png" href="./Image/favicon.png?v2" />
+  </head>
+  <body id="body-quizcreator">
+    <nav id="index-navbar">
+      <a class="nav-btn" href="/">Home</a>
+    </nav>
+
+    <!--On submit without refresh: https://stackoverflow.com/questions/9181862/onsubmit-refresh-html-form-->
+    <form
+      id="startform-quizcreator"
+      onsubmit="SubmitStartform(); return false;"
+    >
+      <p id="startform-title">Create Quiz</p>
+      <label class="startform-label" for="title">Quiz Name</label>
+      <input type="text" id="title" maxlength="20" required />
+      <label class="startform-label" for="description">Description</label>
+      <textarea id="description" maxlength="250" required></textarea>
+      <label class="startform-label" for="startform-visibility"
+        >Visibility</label
+      >
+      <div id="startform-visibility">
+        <label for="public">Public</label>
+        <input
+          type="radio"
+          id="public"
+          name="visibility"
+          value="public"
+          required
+        />
+        <label for="private">Private</label>
+        <input
+          type="radio"
+          id="private"
+          name="visibility"
+          value="private"
+          required
+        />
+      </div>
+      <input type="submit" id="submit-btn" value="Create Quiz" />
+    </form>
+
+    <form id="questionform-quizcreator" onsubmit="AddQuestion(); return false;">
+      <p id="startform-title">Create Question</p>
+      <label for="question-type">Question Type</label>
+      <select
+        name="type"
+        id="question-type"
+        required
+        onchange="ChangeQuestionform()"
+      >
+        <option value="write">Write</option>
+        <option value="truefalse">True or False</option>
+        <option value="multiplechoice">Multiplechoice</option>
+      </select>
+      <label class="questionform-label" for="question">Question</label>
+      <textarea id="question" maxlength="150" required></textarea>
+      <label class="questionform-label" for="answer">Answer</label>
+      <textarea id="answer" maxlength="150"></textarea>
+      <label
+        id="wronganswers-label"
+        class="questionform-label"
+        for="wronganswers"
+        >Wrong Answers</label
+      >
+      <textarea class="wronganswers" maxlength="150"> </textarea>
+      <textarea class="wronganswers" maxlength="150"> </textarea>
+      <textarea class="wronganswers" maxlength="150"> </textarea>
+      <div id="questionform-truefalse">
+        <label for="questionform-true">True</label>
+        <input
+          type="radio"
+          id="questionform-true"
+          name="truefalse"
+          value="true"
+        />
+        <label for="questionform-false">False</label>
+        <input
+          type="radio"
+          id="questionform-false"
+          name="truefalse"
+          value="false"
+        />
+      </div>
+      <input type="submit" id="submit-btn" value="Add Question" />
+      <button type="button" id="submit-btn" onclick="CreateQuiz()">
+        Finish Quiz
+      </button>
+    </form>
+
+    <div id="footer"></div>
+    <script src="./js/quizcreator.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+//Created with the help of: https://www.youtube.com/watch?v=-RCnNyD0L-s
+
 const { authenticate } = require("passport");
 const bcrypt = require("bcrypt");
 const UserModel = require("./models/userModel");

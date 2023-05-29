@@ -9,6 +9,7 @@ Laden Sie den Code des Programmes herunter. Sie können den Code im Ordner Brain
 Öffnen Sie das Programm mit Visual Studio Code. Danach gehen Sie in ein Terminal und geben den Befehl "npm install" ein. Dieser Befehl macht, dass alle notwendigen NPM Packages automatsich in das Programm geladen werden. Ebenfalls müssen Sie eine .env file in ihrem Programm erstellen. In diesem File legen Sie zwei verschiedene Variablen fest.
 
 DATABASE_URL ---> Beschreibt die URL zu Ihrer MongoDB Datenbank.
+
 SESSION_SECRET ---> Eine abfolge von zufälligen Symbolen, um das Login sicher zu machen.
 
 ###  Schritt 3

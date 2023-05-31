@@ -125,13 +125,13 @@ router.patch("/addCurrentlyPlaying/", async (req, res) => {
 router.patch("/addQuiz/:id", async (req, res) => {
   try {
     let owner = [];
-    if (req.user.owner !== []) {
+    if (req.user.owner !== null) {
       owner = req.user.owner;
     } else {
       owner.push(req.user.owner);
     }
     let added = [];
-    if (req.user.added !== []) {
+    if (req.user.added !== null) {
       added = req.user.added;
     } else {
       added.push(req.user.added);

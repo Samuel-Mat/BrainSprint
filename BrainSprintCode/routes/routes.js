@@ -126,9 +126,9 @@ router.patch("/addQuiz/:id", async (req, res) => {
   try {
     let owner = [];
     if (req.user.owner !== []) {
-      owner = req.user.added;
+      owner = req.user.owner;
     } else {
-      owner.push(req.user.added);
+      owner.push(req.user.owner);
     }
     let added = [];
     if (req.user.added !== []) {

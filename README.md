@@ -1,5 +1,25 @@
 # BrainSprint
 
+## Info
+BrainSprint ist eine Webapplikation für die Erstellung und das Teilen von Quiz. Die Quiz können Multiplechoice-, Wahr Falsch- und einfache Schreibfragen beinhalten.
+Ebenfalls kann man seine Quiz auf privat stellen, damit sie nicht von anderen Personen gesehen werden. Um die einzelnen Quiz den Usern zuordnen zu können, gibt es ein 
+einfaches Login mit Passport. Die Daten der User und Quiz werden in einer MongoDB gespeichert.
+
+## Benutzte Technologien
+**IDE** --> Visual Studio Code
+
+**Programmiersprachen** --> JavaScript, EJS, CSS, NodeJS
+
+**NPM-Packages**  --> express, mongoose, routes, bcrypt, passport, flash, session, methodOverride
+
+**Datenbank**  --> MongoDB
+
+## Was habe ich gelernt?
+
+Ich habe bei diesem Projekt viele neue Sachen gelernt. Ich habe gelernt, wie ich eine Datenbank mit meinem Frontend verbinden kann. Ich habe ausserdem
+gelernt, wie ein Login funktioniert und wie man dieses in einem Projekt anwendet. Ich habe auch EJS und viele neue NPM-Packages kennengelernt.
+
+
 ## Inbetriebnahme
 
 ### Schritt 1
